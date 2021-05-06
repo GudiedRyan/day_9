@@ -28,7 +28,7 @@ while game_is_on:
         for car in cars:
             car.speed_up()
 
-    if loop % 6 == 0 and len(cars) < 21:
+    if loop % 6 == 0 and len(cars) < 16:
         car = CarManager()
         cars.append(car)
     
@@ -38,7 +38,7 @@ while game_is_on:
             car.start()
     
     for car in cars:
-        if car.distance(player.pos()) < 30:
+        if car.distance(player.pos()) < 20:
             game_is_on = False
             scoreboard.game_over()
 
