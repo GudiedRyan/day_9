@@ -9,7 +9,7 @@ class Scoreboard(Turtle):
         self.penup()
         self.ht()
         self.goto(-250,260)
-        self.score = 0
+        self.score = 1
         self.level()
 
     def level(self):

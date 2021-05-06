@@ -21,7 +21,7 @@ class CarManager(Turtle):
         self.speed_of_car += MOVE_INCREMENT
 
     def start(self):
-        self.goto(300, y= random.randint(-190,190))
+        self.goto(300, y= random.randint(-230,190))
         self.move_left()
 
     def move_left(self):
